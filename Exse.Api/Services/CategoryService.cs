@@ -11,7 +11,7 @@ public class CategoryService(AppDbContext context) : ICategoryService
 {
   public async Task<Response<Category?>> CreateAsync(CreateCategoryRequest request)
   {
-    await Task.Delay(5000);
+    // await Task.Delay(5000);
     var category = new Category
     {
       UserId = request.UserId,
